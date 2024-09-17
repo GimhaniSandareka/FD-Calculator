@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDcalculator</title>
+    <link rel = "stylesheet" href="fdcalc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topic">
+            <h1>FD Calculator</h1>
+        </div>
+        <fieldset class="calc-form">
+            <div class="forms">
+                <form>
+                    
+
+                        <div class="form-elements">
+                            <label for = "principalAmount">Principal Amount : </label><br>
+                            <input type="number" id = "principalAmount" name="principalAmount" placeholder="Enter the principal amount">
+                        </div> <br>
+
+                        <div class="form-elements">
+                            <label for="interestRate">Interest Rate : </label><br>
+                            <input type="number" id="interestRate" name="interestRate" placeholder="Enter the interest rate">
+                        </div> <br>
+
+                        <div class="form-elements">
+                            <label for="tenure">Tenure (in years) : </label><br>
+                            <input type="number" id="tenure" name="tenure" placeholder="Enter the tenure in years">
+                        </div> <br>
+
+                        <div>
+                            <input type="button" id="calculatebtn" class="calculatebtn" value="Calculate" onclick="calculateMaturityAmount()">
+                        </div>
+
+                    
+                </form>
+                <div class="result-section">
+                    <p id="result" class="result">Maturity Amount</p><br>
+
+                </div>
+            </div>
+    </fieldset>
+    </div>
+  
+    <script src = "fdcalc.js"></script>
+</body>
+</html>
